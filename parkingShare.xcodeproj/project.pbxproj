@@ -7,21 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		3AF32F8E1D83CA65005B443B /* createUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AF32F8D1D83CA65005B443B /* createUser.swift */; };
-		3AF32F901D83D6A7005B443B /* signIn.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AF32F8F1D83D6A7005B443B /* signIn.swift */; };
 		4434E4FB1D83871800726A4C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4434E4FA1D83871800726A4C /* AppDelegate.swift */; };
 		4434E4FD1D83871800726A4C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4434E4FC1D83871800726A4C /* ViewController.swift */; };
 		4434E5001D83871800726A4C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4434E4FE1D83871800726A4C /* Main.storyboard */; };
 		4434E5021D83871800726A4C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4434E5011D83871800726A4C /* Assets.xcassets */; };
 		4434E5051D83871800726A4C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4434E5031D83871800726A4C /* LaunchScreen.storyboard */; };
-		4434E5151D839F7500726A4C /* backend.m in Sources */ = {isa = PBXBuildFile; fileRef = 4434E5141D839F7500726A4C /* backend.m */; };
+		4434E51C1D83EC4400726A4C /* userAuthentication.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4434E51B1D83EC4400726A4C /* userAuthentication.swift */; };
 		D42D5EC0E1FC448BE216C4E8 /* Pods_parkingShare.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 66F3270E68391A9CF259851D /* Pods_parkingShare.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		15660B58C6B3067C732FBA51 /* Pods-parkingShare.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-parkingShare.release.xcconfig"; path = "Pods/Target Support Files/Pods-parkingShare/Pods-parkingShare.release.xcconfig"; sourceTree = "<group>"; };
-		3AF32F8D1D83CA65005B443B /* createUser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = createUser.swift; sourceTree = "<group>"; };
-		3AF32F8F1D83D6A7005B443B /* signIn.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = signIn.swift; sourceTree = "<group>"; };
 		4434E4F71D83871800726A4C /* parkingShare.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = parkingShare.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4434E4FA1D83871800726A4C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4434E4FC1D83871800726A4C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -30,7 +26,7 @@
 		4434E5041D83871800726A4C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4434E5061D83871800726A4C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4434E5131D839F7400726A4C /* parkingShare-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "parkingShare-Bridging-Header.h"; sourceTree = "<group>"; };
-		4434E5141D839F7500726A4C /* backend.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = backend.m; sourceTree = "<group>"; };
+		4434E51B1D83EC4400726A4C /* userAuthentication.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = userAuthentication.swift; sourceTree = "<group>"; };
 		66F3270E68391A9CF259851D /* Pods_parkingShare.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_parkingShare.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D10A47F981ED3E37E002CF2C /* Pods-parkingShare.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-parkingShare.debug.xcconfig"; path = "Pods/Target Support Files/Pods-parkingShare/Pods-parkingShare.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -59,8 +55,7 @@
 		3AF32F8A1D83C97F005B443B /* Authentication */ = {
 			isa = PBXGroup;
 			children = (
-				3AF32F8D1D83CA65005B443B /* createUser.swift */,
-				3AF32F8F1D83D6A7005B443B /* signIn.swift */,
+				4434E51B1D83EC4400726A4C /* userAuthentication.swift */,
 			);
 			name = Authentication;
 			sourceTree = "<group>";
@@ -88,7 +83,6 @@
 			children = (
 				3AF32F8A1D83C97F005B443B /* Authentication */,
 				4434E4FA1D83871800726A4C /* AppDelegate.swift */,
-				4434E5141D839F7500726A4C /* backend.m */,
 				4434E4FC1D83871800726A4C /* ViewController.swift */,
 				4434E4FE1D83871800726A4C /* Main.storyboard */,
 				4434E5011D83871800726A4C /* Assets.xcassets */,
@@ -229,11 +223,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4434E5151D839F7500726A4C /* backend.m in Sources */,
 				4434E4FD1D83871800726A4C /* ViewController.swift in Sources */,
 				4434E4FB1D83871800726A4C /* AppDelegate.swift in Sources */,
-				3AF32F901D83D6A7005B443B /* signIn.swift in Sources */,
-				3AF32F8E1D83CA65005B443B /* createUser.swift in Sources */,
+				4434E51C1D83EC4400726A4C /* userAuthentication.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
