@@ -12,7 +12,8 @@
 		4434E5001D83871800726A4C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4434E4FE1D83871800726A4C /* Main.storyboard */; };
 		4434E5021D83871800726A4C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4434E5011D83871800726A4C /* Assets.xcassets */; };
 		4434E5051D83871800726A4C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4434E5031D83871800726A4C /* LaunchScreen.storyboard */; };
-		4434E5151D839F7500726A4C /* backend.m in Sources */ = {isa = PBXBuildFile; fileRef = 4434E5141D839F7500726A4C /* backend.m */; };
+		4434E5181D83A6EA00726A4C /* backend.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4434E5171D83A6EA00726A4C /* backend.swift */; };
+		4434E51A1D83B25F00726A4C /* lotDataStruct.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4434E5191D83B25F00726A4C /* lotDataStruct.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,8 +24,8 @@
 		4434E5011D83871800726A4C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4434E5041D83871800726A4C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4434E5061D83871800726A4C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		4434E5131D839F7400726A4C /* parkingShare-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "parkingShare-Bridging-Header.h"; sourceTree = "<group>"; };
-		4434E5141D839F7500726A4C /* backend.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = backend.m; sourceTree = "<group>"; };
+		4434E5171D83A6EA00726A4C /* backend.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = backend.swift; sourceTree = "<group>"; };
+		4434E5191D83B25F00726A4C /* lotDataStruct.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = lotDataStruct.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,13 +59,13 @@
 			isa = PBXGroup;
 			children = (
 				4434E4FA1D83871800726A4C /* AppDelegate.swift */,
-				4434E5141D839F7500726A4C /* backend.m */,
 				4434E4FC1D83871800726A4C /* ViewController.swift */,
 				4434E4FE1D83871800726A4C /* Main.storyboard */,
 				4434E5011D83871800726A4C /* Assets.xcassets */,
 				4434E5031D83871800726A4C /* LaunchScreen.storyboard */,
 				4434E5061D83871800726A4C /* Info.plist */,
-				4434E5131D839F7400726A4C /* parkingShare-Bridging-Header.h */,
+				4434E5171D83A6EA00726A4C /* backend.swift */,
+				4434E5191D83B25F00726A4C /* lotDataStruct.swift */,
 			);
 			path = parkingShare;
 			sourceTree = "<group>";
@@ -140,8 +141,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4434E5151D839F7500726A4C /* backend.m in Sources */,
+				4434E51A1D83B25F00726A4C /* lotDataStruct.swift in Sources */,
 				4434E4FD1D83871800726A4C /* ViewController.swift in Sources */,
+				4434E5181D83A6EA00726A4C /* backend.swift in Sources */,
 				4434E4FB1D83871800726A4C /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
