@@ -17,7 +17,7 @@ class database {
         
         let key = ref.child("posts").childByAutoId().key
         
-        let post = [listing : Listing]
+        let post : [Listing : Any] = [listing : Listing]
         
         // create a post in /posts
         let childUpdates = ["/posts/\(key)": post]
