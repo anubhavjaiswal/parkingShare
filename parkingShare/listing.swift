@@ -33,10 +33,9 @@ class Listing : Hashable, Equatable {
 
     func get_userID() -> String {
         if let user = FIRAuth.auth()?.currentUser {
-            self.userID = user.uid
+            return user.uid
         }
-        return userID;
-        
+        return ""
     }
     // to be called when determining location of this listing 
     func get_location() -> String {
@@ -93,10 +92,8 @@ class Listing : Hashable, Equatable {
     func set_type(newType : Int) {
         type = newType
     }
-    
-    func ==(lhs : Listing, rhs : Listing) -> Bool {
-        return (lhs.location == rhs.location && lhs.userID == rhs.userID)
-    }
-    
-    
+}
+
+func ==(lhs : Listing, rhs : Listing) -> Bool {
+    return (lhs.location == rhs.location && lhs.userID == rhs.userID)
 }
