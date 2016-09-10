@@ -19,20 +19,45 @@
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="xEE-YW-Vfk">
                                 <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
-                                <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="158" y="136" width="84" height="179"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="84" id="4DG-Hc-n49"/>
+                                    <constraint firstAttribute="height" constant="179" id="BE8-w1-GAL"/>
+                                </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="4DG-Hc-n49"/>
+                                        <exclude reference="BE8-w1-GAL"/>
+                                    </mask>
+                                </variation>
+                                <variation key="widthClass=compact">
+                                    <mask key="constraints">
+                                        <include reference="4DG-Hc-n49"/>
+                                        <include reference="BE8-w1-GAL"/>
+                                    </mask>
                                 </variation>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="xEE-YW-Vfk" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="7jH-gR-cHR"/>
+                            <constraint firstItem="xEE-YW-Vfk" firstAttribute="top" secondItem="Llm-lL-Icb" secondAttribute="bottom" constant="116" id="ySx-iM-axT"/>
+                        </constraints>
                         <variation key="default">
                             <mask key="subviews">
                                 <exclude reference="xEE-YW-Vfk"/>
+                            </mask>
+                            <mask key="constraints">
+                                <exclude reference="7jH-gR-cHR"/>
+                                <exclude reference="ySx-iM-axT"/>
                             </mask>
                         </variation>
                         <variation key="widthClass=compact">
                             <mask key="subviews">
                                 <include reference="xEE-YW-Vfk"/>
+                            </mask>
+                            <mask key="constraints">
+                                <include reference="7jH-gR-cHR"/>
+                                <include reference="ySx-iM-axT"/>
                             </mask>
                         </variation>
                     </view>
@@ -40,6 +65,14 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="52.5" y="375"/>
+        </scene>
+        <!--Login-->
+        <scene sceneID="CEb-Tx-vC2">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Main" referencedIdentifier="Login" id="yed-yz-caq" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8jd-K9-TKE" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="606.75" y="361"/>
         </scene>
     </scenes>
     <resources>

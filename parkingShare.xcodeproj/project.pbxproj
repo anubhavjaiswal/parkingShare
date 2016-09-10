@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3A399C721D84A5CA009F9D4D /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3A399C711D84A5CA009F9D4D /* GoogleService-Info.plist */; };
 		4434E4FB1D83871800726A4C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4434E4FA1D83871800726A4C /* AppDelegate.swift */; };
 		4434E4FD1D83871800726A4C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4434E4FC1D83871800726A4C /* ViewController.swift */; };
 		4434E5001D83871800726A4C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4434E4FE1D83871800726A4C /* Main.storyboard */; };
@@ -15,11 +16,11 @@
 		4434E51C1D83EC4400726A4C /* userAuthentication.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4434E51B1D83EC4400726A4C /* userAuthentication.swift */; };
 		4434E51F1D83FE9900726A4C /* database.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4434E51E1D83FE9900726A4C /* database.swift */; };
 		4434E5211D84018B00726A4C /* listing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4434E5201D84018B00726A4C /* listing.swift */; };
-		D42D5EC0E1FC448BE216C4E8 /* Pods_parkingShare.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 66F3270E68391A9CF259851D /* Pods_parkingShare.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		15660B58C6B3067C732FBA51 /* Pods-parkingShare.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-parkingShare.release.xcconfig"; path = "Pods/Target Support Files/Pods-parkingShare/Pods-parkingShare.release.xcconfig"; sourceTree = "<group>"; };
+		3A399C711D84A5CA009F9D4D /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "parkingShare/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		4434E4F71D83871800726A4C /* parkingShare.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = parkingShare.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4434E4FA1D83871800726A4C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4434E4FC1D83871800726A4C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -40,7 +41,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D42D5EC0E1FC448BE216C4E8 /* Pods_parkingShare.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -67,6 +67,7 @@
 		4434E4EE1D83871800726A4C = {
 			isa = PBXGroup;
 			children = (
+				3A399C711D84A5CA009F9D4D /* GoogleService-Info.plist */,
 				4434E4F91D83871800726A4C /* parkingShare */,
 				4434E4F81D83871800726A4C /* Products */,
 				07AE4C39BCCFB0DDCE0C2FF9 /* Pods */,
@@ -150,6 +151,7 @@
 				TargetAttributes = {
 					4434E4F61D83871800726A4C = {
 						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = 9RC664RQ3W;
 					};
 				};
 			};
@@ -177,6 +179,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4434E5051D83871800726A4C /* LaunchScreen.storyboard in Resources */,
+				3A399C721D84A5CA009F9D4D /* GoogleService-Info.plist in Resources */,
 				4434E5021D83871800726A4C /* Assets.xcassets in Resources */,
 				4434E5001D83871800726A4C /* Main.storyboard in Resources */,
 			);
@@ -358,10 +361,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = parkingShare/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = thedaniels.parkingShare;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "parkingShare/parkingShare-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
@@ -373,10 +379,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = parkingShare/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = thedaniels.parkingShare;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "parkingShare/parkingShare-Bridging-Header.h";
 			};
 			name = Release;

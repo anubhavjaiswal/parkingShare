@@ -28,7 +28,7 @@ class Listing : Hashable, Equatable {
         self.size = size
         self.start = start
         self.end = end
-        self.userID = get_userID()
+        self.userID = ""
     }
 
     func get_userID() -> String {
