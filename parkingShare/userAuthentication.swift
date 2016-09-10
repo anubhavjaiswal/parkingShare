@@ -28,31 +28,4 @@ class userAuthentication {
     }
     
     // google sign in already implemented in AppDelegate.swift
-
-    
-    
-    
-    
-    
-    // delete current user
-    func deleteCurrentUser() {
-        var user = firebase.auth().currentUser;
-        
-        user.delete().then(function() {
-              // User deleted
-            }, function(error) {
-              // An error happened in deleting the user
-        })
-    }
-    
-    // set current user's email address
-    func setCurrentEmail(email : string) {
-        var user = firebase.auth().currentUser;
-        
-        user.updateEmail (email).then (function () {
-            // Update successful
-        }, function(error) {
-            // error occurred
-        })
-    }
 }
