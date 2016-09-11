@@ -9,7 +9,7 @@
 
 import Firebase
 
-class Listing : Hashable, Equatable {
+class Listing : NSObject {
     var location : String  // address of the listing as a string
     var price : Float // price of the listing
     var type : Int // curbside - 1, garage - 2
@@ -17,7 +17,7 @@ class Listing : Hashable, Equatable {
     var start : String // start date of listing dd-MM-yyyy HH:mm
     var end : String // end date of listing
     var userID : String // cannot be set. automatically set to current user
-    var hashValue: Int {
+    override var hashValue: Int {
         return Int(price) * type * size;
     }
     

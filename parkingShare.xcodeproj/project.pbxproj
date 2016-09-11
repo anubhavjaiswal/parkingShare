@@ -8,6 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		3A399C721D84A5CA009F9D4D /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3A399C711D84A5CA009F9D4D /* GoogleService-Info.plist */; };
+		3A399C741D84C2E5009F9D4D /* SignupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A399C731D84C2E5009F9D4D /* SignupViewController.swift */; };
+		3A399C761D84CEBF009F9D4D /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A399C751D84CEBF009F9D4D /* MapViewController.swift */; };
+		3A399C781D84E001009F9D4D /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A399C771D84E001009F9D4D /* MapKit.framework */; };
+		3A399C7A1D84EA64009F9D4D /* Backend.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A399C791D84EA64009F9D4D /* Backend.swift */; };
+		3A399C7C1D84EE1F009F9D4D /* sharedManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A399C7B1D84EE1F009F9D4D /* sharedManager.swift */; };
 		4434E4FB1D83871800726A4C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4434E4FA1D83871800726A4C /* AppDelegate.swift */; };
 		4434E4FD1D83871800726A4C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4434E4FC1D83871800726A4C /* ViewController.swift */; };
 		4434E5001D83871800726A4C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4434E4FE1D83871800726A4C /* Main.storyboard */; };
@@ -21,6 +26,11 @@
 /* Begin PBXFileReference section */
 		15660B58C6B3067C732FBA51 /* Pods-parkingShare.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-parkingShare.release.xcconfig"; path = "Pods/Target Support Files/Pods-parkingShare/Pods-parkingShare.release.xcconfig"; sourceTree = "<group>"; };
 		3A399C711D84A5CA009F9D4D /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "parkingShare/GoogleService-Info.plist"; sourceTree = "<group>"; };
+		3A399C731D84C2E5009F9D4D /* SignupViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignupViewController.swift; sourceTree = "<group>"; };
+		3A399C751D84CEBF009F9D4D /* MapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
+		3A399C771D84E001009F9D4D /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		3A399C791D84EA64009F9D4D /* Backend.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Backend.swift; sourceTree = "<group>"; };
+		3A399C7B1D84EE1F009F9D4D /* sharedManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = sharedManager.swift; sourceTree = "<group>"; };
 		4434E4F71D83871800726A4C /* parkingShare.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = parkingShare.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4434E4FA1D83871800726A4C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4434E4FC1D83871800726A4C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -41,6 +51,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3A399C781D84E001009F9D4D /* MapKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -91,6 +102,8 @@
 				4434E4FA1D83871800726A4C /* AppDelegate.swift */,
 				4434E4FC1D83871800726A4C /* ViewController.swift */,
 				4434E4FE1D83871800726A4C /* Main.storyboard */,
+				3A399C751D84CEBF009F9D4D /* MapViewController.swift */,
+				3A399C731D84C2E5009F9D4D /* SignupViewController.swift */,
 				4434E5011D83871800726A4C /* Assets.xcassets */,
 				4434E5031D83871800726A4C /* LaunchScreen.storyboard */,
 				4434E5061D83871800726A4C /* Info.plist */,
@@ -103,6 +116,8 @@
 			isa = PBXGroup;
 			children = (
 				4434E51E1D83FE9900726A4C /* database.swift */,
+				3A399C791D84EA64009F9D4D /* Backend.swift */,
+				3A399C7B1D84EE1F009F9D4D /* sharedManager.swift */,
 				4434E5201D84018B00726A4C /* listing.swift */,
 			);
 			name = RTDatabase;
@@ -111,6 +126,7 @@
 		E85FCB0D3132520E59CB6E57 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				3A399C771D84E001009F9D4D /* MapKit.framework */,
 				66F3270E68391A9CF259851D /* Pods_parkingShare.framework */,
 			);
 			name = Frameworks;
@@ -240,11 +256,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3A399C7A1D84EA64009F9D4D /* Backend.swift in Sources */,
+				3A399C741D84C2E5009F9D4D /* SignupViewController.swift in Sources */,
 				4434E4FD1D83871800726A4C /* ViewController.swift in Sources */,
 				4434E4FB1D83871800726A4C /* AppDelegate.swift in Sources */,
 				4434E51F1D83FE9900726A4C /* database.swift in Sources */,
 				4434E5211D84018B00726A4C /* listing.swift in Sources */,
 				4434E51C1D83EC4400726A4C /* userAuthentication.swift in Sources */,
+				3A399C7C1D84EE1F009F9D4D /* sharedManager.swift in Sources */,
+				3A399C761D84CEBF009F9D4D /* MapViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
